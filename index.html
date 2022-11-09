@@ -5,36 +5,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | Fylo data storage component</title>
+  <title>Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
 
 <body>
+  <div class="data-storage">
 
-  You’ve used 815 GB of your storage
+    <div class="data-storage__elements">
+      <div class="elements__img">
+        <img src="/images/logo.svg" alt="Fylo storage Logo image" class="elements__img--logo">
+      </div>
+      <div class="elements__icon">
+        <img src="/images/icon-document.svg" alt="Fylo storage document icon" class="elements__icon--doc">
+        <img src="/images/icon-folder.svg" alt="Fylo storage folder icon" class="elements__icon--folder">
+        <img src="/images/icon-upload.svg" alt="Fylo storage upload icon" class="elements__icon--upload">
+      </div>
+    </div>
 
-  185 GB Left
-
-  0 GB
-  1000 GB
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io/profile/Dopest-Hyo" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/Dopest-Hyo/">Dopest-Hyo</a>.
+    <div class="data-storage__contents">
+      <div class="contents__detail">
+        <p class="contents__detail--paragraph">You’ve used <b>815 GB</b> of your storage</p>
+      </div>
+      <div class="contents__progressbar">
+        progress bar
+        <p class="contents__progressbar--parag">
+          0 GB 1000 GB
+        </p>
+      </div>
+      <div class="contents__Remaining-box">
+        185 GB LEFT
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/profile/Dopest-Hyo" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Dopest-Hyo/">Dopest-Hyo</a>.
+    </div>
   </div>
 </body>
 
