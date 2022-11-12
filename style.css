@@ -163,3 +163,96 @@ color: var(--Grayish-Blue);
   margin-top: 15px;
   justify-content: space-between;
 }
+
+
+/* Version: max-width 768px */
+@media only screen and (max-width: 768px) {
+  body{
+    background-color: var(--Very-Dark-Blue);
+      background-image: url(./images/bg-desktop.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+  }
+  .data-storage{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+    .data-storage__contents {
+      margin-top: 25px;
+    }
+}
+
+/* Version: max-width 768px */
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: var(--Very-Dark-Blue);
+    background-image: url(./images/bg-desktop.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .data-storage {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .data-storage__contents {
+    margin-top: 25px;
+  }
+}
+
+
+/* Version: max-width 375px */
+@media only screen and (max-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url(./images/bg-desktop.png);
+    background-size: 250% 400%;
+    background-position: 0 80%;
+  }
+
+  .data-storage {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+    .data-storage__elements {
+      background-color: var(--Dark-Blue);
+      width: 310px;
+      margin-left: 1.2rem;
+    }
+    .data-storage__contents {
+      background-color: var(--Dark-Blue);
+      border-radius: 10px;
+      margin-top: 15px;
+      margin-left: 1.2rem;
+      width: 310px;
+      height: 160px;
+      padding: 30px;
+    }
+    .contents__detail--paragraph {
+      margin-bottom: 15px;
+      font-size: 12px;
+      text-align: center;
+    }
+    .contents__progressbar--parag{
+      font-size: 12px;
+    }
+    .contents__progressbar {
+      appearance: none;
+      position: relative;
+      width: 250px;
+    }
+    .contents__Remaining-box {
+      position: absolute;
+      transform: translate(2rem, 1rem);
+      background-color: white;
+      border-radius: 10px 10px 10px 10px;
+      height: 70px;
+    }
+    .contents__Remaining-box::after {
+      border-width: 0px;
+    }
+}
