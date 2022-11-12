@@ -17,6 +17,9 @@
 
 body {
   background-color: var(--Very-Dark-Blue);
+  background-image: url(/images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   min-height: 100vh;
