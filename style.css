@@ -97,11 +97,28 @@ body {
   font-weight: 400px;
 }
 
+.contents__progressbar{
+  appearance: none;
+  position: relative;
+  width: 520px;
+}
+
+.contents__progressbar::-webkit-progress-bar{
+  height: 20px;
+  background: var(--Very-Dark-Blue);
+  border-radius: 10px;
+  border: solid 3px var(--Very-Dark-Blue);
+}
+.contents__progressbar::-webkit-progress-value {
+  border-radius: 10px;
+  background: -webkit-linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
 
 .contents__Remaining-box{
   position: absolute;
   top: 290px;
-  right: 300px;
+  right: 270px;
   z-index: 1;
   display: flex;
   align-items: center;
