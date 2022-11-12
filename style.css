@@ -117,8 +117,9 @@ body {
 
 .contents__Remaining-box{
   position: absolute;
-  top: 290px;
-  right: 270px;
+  /* top: 290px;
+  right: 270px; */
+  transform: translate(21rem, -11rem);
   z-index: 1;
   display: flex;
   align-items: center;
